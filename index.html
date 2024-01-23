@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>The... Something</title>
+</head>
+<body onload="startTime()">
+    <div class="header">
+        <h1 data-value="LOKI BREKKER">LOKI BREKKER</h1>
+    </div>
+    <main>
+        <div class="commands">
+            <div id="clock"></div>
+            
+            <div class="chat-container">
+                <form id="chat-form">
+                    <input type="text" id="user-message" placeholder="Type your message...">
+                    <button type="submit" id="submit-button">Send</button>
+                </form>
+                <ul id="chat-messages">
+                </ul>
+            </div>
+            <div class="right-text">
+                <center>Commands:</center>
+                - Entering the name of an ADC, e.g. "Aphelios", will display its counters, preferred supports and recommended runes
+            </div>
+        </div>
+    </div>
+    </main>
+    <div class="Daysheet">
+        <h2>Monday</h2>
+        <div class="Days">
+            <h3 class="Day" id="Monday">Monday</h3>
+                <div class="lessons">
+                    <div class="leftday">8:00:</div>
+                    <div class="middleday">*</div>
+                    <div class="rightday"></div>
+                </div>
+                <div class="lessons">
+                    <div class="leftday">8:55:</div>
+                    <div class="middleday">*</div>
+                    <div class="rightday"></div>
+                </div>
+                <div class="lessons">
+                    <div class="leftday">9:40:</div>
+                    <div class="middleday">*</div>
+                    <div class="rightday"></div>
+                </div>
+                <div class="lessons">
+                    <div class="leftday">10:45:</div>
+                    <div class="middleday">Geography</div>
+                    <div class="rightday">C209</div>
+                </div>
+                <div class="lessons">
+                    <div class="leftday">11:50:</div>
+                    <div class="middleday">Math</div>
+                    <div class="rightday">C226</div>
+                </div>
+                <div class="lessons">
+                    <div class="leftday">12:45:</div>
+                    <div class="middleday">ABD</div>
+                    <div class="rightday">C328</div>
+                </div>
+                <div class="lessons">
+                    <div class="leftday">13:40:</div>
+                    <div class="middleday">ABD</div>
+                    <div class="rightday">C328</div>
+                </div>
+                <div class="lessons">
+                    <div class="leftday">14:35</div>
+                    <div class="middleday">TSIAI</div>
+                    <div class="rightday">C313</div>
+                </div>
+                <div class="lessons">
+                    <div class="leftday">15:30</div>
+                    <div class="middleday">TSIAI</div>
+                    <div class="rightday">C313</div>
+                </div>
+        </div>
+    </div>
+    
+    <div class="Daysheet">
+        <h2>Tuesday</h2>
+        <div class="Days">
+            <h3 class="Day" id="Tuesday">Tuesday</h3>
+            <div class="lessons">
+                <div class="leftday">8:00:</div>
+                <div class="middleday">Civics</div>
+                <div class="rightday">C329</div>
+            </div>
+            <div class="lessons">
+                <div class="leftday">8:55:</div>
+                <div class="middleday">PE</div>
+                <div class="rightday"></div>
+            </div>
+            <div class="lessons">
+                <div class="leftday">9:50:</div>
+                <div class="middleday">PE</div>
+                <div class="rightday"></div>
+            </div>
+            <div class="lessons">
+                <div class="leftday">10:45:</div>
+                <div class="middleday">English</div>
+                <div class="rightday">C129</div>
+            </div>
+            <div class="lessons">
+                <div class="leftday">11:50:</div>
+                <div class="middleday">Biology</div>
+                <div class="rightday">C205</div>
+            </div>
+            <div class="lessons">
+                <div class="leftday">12:45:</div>
+                <div class="middleday">LSBD</div>
+                <div class="rightday">C313</div>
+            </div>
+            <div class="lessons">
+                <div class="leftday">13:40:</div>
+                <div class="middleday">TSIAI</div>
+                <div class="rightday">C328</div>
+            </div>
+            <div class="lessons">
+                <div class="leftday">14:35</div>
+                <div class="middleday">LSBD</div>
+                <div class="rightday">C313</div>
+            </div>
+            <div class="lessons">
+                <div class="leftday">15:30</div>
+                <div class="middleday">*</div>
+                <div class="rightday"></div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="Daysheet">
+        <h2>Wednesday</h2>
+        <div class="Days">
+            <h3 class="Day" id="Wednesday">Wednesday</h3>
+            <div class="lessons">
+                <div class="leftday">8:00:</div>
+                <div class="middleday">*</div>
+                <div class="rightday"></div>
+            </div>
+            <div class="lessons">
+                <div class="leftday">8:55:</div>
+                <div class="middleday">ELSK</div>
+                <div class="rightday">C328</div>
+            </div>
+            <div class="lessons">
+                <div class="leftday">9:50:</div>
+                <div class="middleday">ELSK</div>
+                <div class="rightday">C328</div>
+            </div>
+            <div class="lessons">
+                <div class="leftday">10:45:</div>
+                <div class="middleday">Physics</div>
+                <div class="rightday">C134</div>
+            </div>
+            <div class="lessons">
+                <div class="leftday">11:50:</div>
+                <div class="middleday">*</div>
+                <div class="rightday"></div>
+            </div>
+            <div class="lessons">
+                <div class="leftday">12:45:</div>
+                <div class="middleday">PE</div>
+                <div class="rightday">A33</div>
+            </div>
+            <div class="lessons">
+                <div class="leftday">13:40:</div>
+                <div class="middleday">German</div>
+                <div class="rightday">C202</div>
+            </div>
+            <div class="lessons">
+                <div class="leftday">14:35</div>
+                <div class="middleday">Polish</div>
+                <div class="rightday">C228</div>
+            </div>
+            <div class="lessons">
+                <div class="leftday">15:30</div>
+                <div class="middleday">Polish</div>
+                <div class="rightday">C228</div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="Daysheet">
+        <h2>Thursday</h2>
+        <div class="Days">
+            <h3 class="Day" id="Thursday">Thursday</h3>
+            <div class="lessons">
+                <div class="leftday">8:00:</div>
+                <div class="middleday">*</div>
+                <div class="rightday"></div>
+            </div>
+            <div class="lessons">
+                <div class="leftday">8:55:</div>
+                <div class="middleday">English</div>
+                <div class="rightday">C129</div>
+            </div>
+            <div class="lessons">
+                <div class="leftday">9:50:</div>
+                <div class="middleday">English</div>
+                <div class="rightday">C129</div>
+            </div>
+            <div class="lessons">
+                <div class="leftday">10:45:</div>
+                <div class="middleday">*</div>
+                <div class="rightday"></div>
+            </div>
+            <div class="lessons">
+                <div class="leftday">11:50:</div>
+                <div class="middleday">Polish</div>
+                <div class="rightday">C228</div>
+            </div>
+            <div class="lessons">
+                <div class="leftday">12:45:</div>
+                <div class="middleday">Math</div>
+                <div class="rightday">C226</div>
+            </div>
+            <div class="lessons">
+                <div class="leftday">13:40:</div>
+                <div class="middleday">Chemistry</div>
+                <div class="rightday">C205</div>
+            </div>
+            <div class="lessons">
+                <div class="leftday">14:35</div>
+                <div class="middleday">History</div>
+                <div class="rightday">C329</div>
+            </div>
+            <div class="lessons">
+                <div class="leftday">15:30</div>
+                <div class="middleday">*</div>
+                <div class="rightday"></div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="Daysheet">
+        <h2>Friday</h2>
+        <div class="Days" id="Friday">
+            <h3 class="Day">Friday</h3>
+            <div class="lessons">
+                <div class="leftday">8:00:</div>
+                <div class="middleday">LSK</div>
+                <div class="rightday">C11</div>
+            </div>
+            <div class="lessons">
+                <div class="leftday">8:55:</div>
+                <div class="middleday">LSK</div>
+                <div class="rightday">C11</div>
+            </div>
+            <div class="lessons">
+                <div class="leftday">9:40:</div>
+                <div class="middleday">Math</div>
+                <div class="rightday">C226</div>
+            </div>
+            <div class="lessons">
+                <div class="leftday">10:45:</div>
+                <div class="middleday">Math</div>
+                <div class="rightday">C226</div>
+            </div>
+            <div class="lessons">
+                <div class="leftday">11:50:</div>
+                <div class="middleday">Advisory</div>
+                <div class="rightday">C205</div>
+            </div>
+            <div class="lessons">
+                <div class="leftday">12:45:</div>
+                <div class="middleday">WIAK</div>
+                <div class="rightday">C313</div>
+            </div>
+            <div class="lessons">
+                <div class="leftday">13:40:</div>
+                <div class="middleday">WIAK</div>
+                <div class="rightday">C313</div>
+            </div>
+            <div class="lessons">
+                <div class="leftday">14:35</div>
+                <div class="middleday">English</div>
+                <div class="rightday">C129</div>
+            </div>
+            <div class="lessons">
+                <div class="leftday">15:30</div>
+                <div class="middleday">*</div>
+                <div class="rightday"></div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

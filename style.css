@@ -1,0 +1,284 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: pixelfont;
+    font-size: 25px;
+}
+
+:root {
+    --Rightboxtextcolor: white;
+}
+
+@font-face {
+    font-family: Dela Gothic One;
+    src: url(fonts/DelaGothicOne-Regular.ttf);
+}
+
+@font-face {
+    font-family: pixelfont;
+    src: url(fonts/pixelfont.ttf);
+}
+
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: clamp(2rem, 5vw, 5rem);
+    color: white;
+    padding: 1rem clamp(1rem, 2vw, 3rem);
+    border-radius: clamp(0.4rem, 0.75vw, 1rem);
+    background: rgba(0,0,0,0.3);
+}
+
+h1:hover {
+    background: rgba(255,255,255,0.1);
+    color: black;
+}
+
+
+body {
+    background-color: #0B0B0B;
+    background-image: url("images/");
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center;
+    background-position-y: 200px;
+    color: #333;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 0;
+}
+
+.header {
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+    margin: 0rem;
+    place-items: center;
+    height: 415px;
+    background-image: url(images/giphy.gif);
+    background-position: center top;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position-y: -200px;
+    text-align: center;
+}
+
+@media screen and (max-width: 720px) {
+    .header {
+      display: none;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .header {
+      background-size: 170% auto;
+    }
+}
+
+main {
+    margin: 0 auto;
+    padding: 30px;
+    background-color: gray;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+    background-repeat: no-repeat;
+    background: rgb(29,28,28);
+    background: linear-gradient(90deg, rgba(29,28,28,1) 0%, rgba(139,17,170,1) 27%, rgba(126,43,168,1) 95%);
+}
+
+@media screen and (max-width: 1200px) {
+    #chat-messages {
+      margin-top: 110px;
+    }
+}
+form {
+    flex-grow: 1;
+    margin: 0 10px;
+}
+
+.chat-container {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 70px;
+    width: 33%;
+}
+
+@media screen and (max-width: 1200px) {
+    .chat-container {
+        flex-direction: row;
+    }
+}
+
+#clock {
+    width: 10%;
+    text-align: center;
+    font-size: 32px;
+    padding: 20px;
+    border-radius: 25px;
+    border: 2px solid white;
+    height: fit-content;
+    transform: translateY(15px);
+    color: white;
+    background-color: rgba(171,36,205,1);
+}
+
+@media screen and (max-width: 1520px) {
+    #clock {
+      display: none;
+    }
+}
+
+.right-text {
+    width: 40%;
+    padding: 20px;
+    border: 1px solid black;
+    color: var(--Rightboxtextcolor);
+    background-image: url(images/);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.commands {
+    display: flex;
+    width: 100%;
+}
+
+.message {
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.user {
+    background-color: #0078d4;
+    color: #fff;
+    text-align: right;
+}
+
+.bot {
+    background-color: #eee;
+    color: #333;
+}
+
+#chat-form {
+    margin-top: 20px;
+    display: flex; 
+}
+
+#user-message {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+}
+
+#submit-button {
+    padding: 10px 20px;
+    background-color: #0078d4;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#submit-button:hover {
+    background-color: #005ea2;
+} 
+
+.Daysheet {
+    display: flex;
+    float: left;
+    width: 20%;
+    justify-content: center;
+    border: 1px solid white;
+    text-align: justify;
+    background-color: #00786e;
+    transition: all 0.3s ease;
+    height: 365px;
+}
+
+
+@media screen and (min-width: 1300px) {
+    .Daysheet:hover {
+        background-color: #00CBC0;
+    }
+    .Days {
+        display: none;
+    }
+
+    .Daysheet:hover .Days {
+        display: block;
+    }
+
+    .Daysheet:hover h2 {
+        display:none;
+    }
+    
+    .Daysheet h2 {
+        height: 100%;
+        width: 100%;
+        text-align: center;
+        font-size: 6vmin;
+        vertical-align: text-bottom;
+        transform: translateY(35%);
+    }
+}
+
+.Daysheet h3 {
+    font-size: 5vmin;
+}
+
+@media screen and (max-width: 1300px) {
+    .Daysheet {
+      width: 100%;
+      font-size: 70px;
+      background-color: rgba(22,214,81,1);
+    }
+    .Daysheet h2 {
+        display: none;
+    }
+}
+
+.leftday {
+    text-align: left;
+    width: 33%;
+    float: left;
+}
+
+.middleday {
+    text-align: center;
+    width: 33%;
+    float: left;
+}
+
+.rightday {
+    text-align: right;
+    width: 30%;
+    float: left;
+}
+
+.Days {
+    width: 100%;
+}
+
+.Day {
+    text-align: center;
+}
+
+.lessons {
+    height: 35px;
+    padding: 10px;
+}
